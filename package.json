@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Ramya-Geethika/tinyapp/issues"
   },
-  "homepage": "https://github.com/Ramya-Geethika/tinyapp#readme"
+  "homepage": "https://github.com/Ramya-Geethika/tinyapp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
