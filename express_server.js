@@ -1,10 +1,9 @@
 const express = require('express');
 const app = express();
 const PORT = 8080;
+const bodyParser = require("body-parser");
 
 app.set("view engine", "ejs");
-
-const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended: true}));
 
 function generateRandomString() {
@@ -17,19 +16,20 @@ const urlDatabase = {
   "9sm5xK": "http://www.google.com"
 };
 
-delete urlDatabase.b2xVn2;
-app.post(('/urls/:shortURL/delete'), (req, res)=>{
+app.post(('/urls/:shortURL/delete'), (req, res) => {
   const shortURL = req.params.shortURL;
   delete urlDatabase[shortURL];
   console.log('url: ',urlDatabase);
   res.redirect('/urls');
 });
 
+app.post(('/urls/:shortURL/delete'), (req, res)=>{
+  const shortURL = req.params.shortURL;
+  delete urlDatabase[shortURL];
+  console.log('url: ',urlDatabase)
+  res.redirect('/urls');
+});
 
-// app.post("/urls", (req, res) => {
-//   console.log(req.body);  // Log the POST request body to the console
-//   res.send("Ok");         // Respond with 'Ok' (we will replace this)
-// });
 
 app.post("/urls", (req, res) => {
   const generatedUrl = generateRandomString(); //generate a random string
