@@ -17,6 +17,15 @@ const urlDatabase = {
   "9sm5xK": "http://www.google.com"
 };
 
+delete urlDatabase.b2xVn2;
+app.post(('/urls/:shortURL/delete'), (req, res)=>{
+  const shortURL = req.params.shortURL;
+  delete urlDatabase[shortURL];
+  console.log('url: ',urlDatabase);
+  res.redirect('/urls');
+});
+
+
 // app.post("/urls", (req, res) => {
 //   console.log(req.body);  // Log the POST request body to the console
 //   res.send("Ok");         // Respond with 'Ok' (we will replace this)
