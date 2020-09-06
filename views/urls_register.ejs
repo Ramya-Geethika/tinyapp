@@ -6,7 +6,7 @@
     <!-- Bootstrap CSS -->
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <title>Login - TinyApp</title>
+    <title>Register - TinyApp</title>
     <style>
   .form-signin {
     width: 100%;
@@ -20,8 +20,8 @@
 </head>
 <body class="text-center" data-gr-c-s-loaded="true">
   <%- include('partials/short_header') %>
-  <h1>Login</h1>
-  <form class="form-signin" method="POST" action="/login">
+  <h1>Create Account</h1>
+  <form class="form-signin" method="POST" action="/register">
     <div class="form-label-group">
       <input type="email" class="form-control" placeholder="Email address" name="email">
     </div>
@@ -30,7 +30,7 @@
       <input type="password"  class="form-control" placeholder="Password" name="password">
     </div>
 
-    <button class="btn btn-lg btn-success btn-block" type="submit">Login</button>
+    <button class="btn btn-lg btn-success btn-block" type="submit">Register</button>
 
   </form>
   <!-- Bootstrap JS -->
