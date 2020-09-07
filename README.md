@@ -4,7 +4,7 @@ TinyApp is a full stack web application built with Node and Express that allows 
 
 ## Final Product
 
-!["Screenshot of Creating of URLs page"](https://https://github.com/Ramya-Geethika/tinyapp/blob/master/docs/urlCreate.png)
+!["Screenshot of Creating of URLs page"](https://github.com/Ramya-Geethika/tinyapp/blob/master/docs/urlCreate.png?raw=true)
 !["Screenshot of Editing of URLs page"](https://github.com/Ramya-Geethika/tinyapp/blog/master/docs/urlsEdit.png)
 !["Screenshot of Login of URLs page"](https://github.com/Ramya-Geethika/tinyapp/blog/master/docs/urlsLogin.png)
 !["Screenshot of URLs page"](https://github.com/Ramya-Geethika/tinyapp/blog/master/docs/urlsPage.png)
